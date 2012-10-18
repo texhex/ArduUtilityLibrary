@@ -2,7 +2,7 @@
 /*
 halt() Version 2, part of the ArduUtilityLibrary (http://aul.codeplex.com/)
 Execute halt() to stop execution of your sketch permanently
-Copyright (C) 2011-2012 Michael 'TeX' Hex
+Copyright (C) 2011-2012 Michael 'TeX' Hex (http://www.texhex.info/)
 
 
 This library is free software; you can redistribute it and/or
@@ -28,7 +28,7 @@ Version 2: Added while(true)
 
 !!! Documentation
 
-The most recent document can be found on the project homepage
+The most recent documentation can be found on the project homepage
 http://aul.codeplex.com/wikipage?title=Halt.h
 
 This is a snapshot of this page:

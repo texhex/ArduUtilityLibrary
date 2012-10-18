@@ -2,7 +2,7 @@
 /*
 availableMemory() Version 1, part of the ArduUtilityLibrary (http://aul.codeplex.com/)
 This function returns the number of free memory (in bytes) 
-Copyright (C) 2011-2012 Michael 'TeX' Hex
+Copyright (C) 2011-2012 Michael 'TeX' Hex (http://www.texhex.info/)
 
 
 This library is free software; you can redistribute it and/or
@@ -27,7 +27,7 @@ Version 1: First release
 
 !!! Documentation
 
-The most recent document can be found on the project homepage
+The most recent documentation can be found on the project homepage
 http://aul.codeplex.com/wikipage?title=AvailableMemory.h
 
 This is a snapshot of this page:
@@ -35,7 +35,7 @@ This is a snapshot of this page:
 
 Executing {{availableMemory()}} returns the number of free memory (in bytes) 
 
-!! Example
+!!! Example
 
 {code:c++}
 void setup() { 
@@ -53,7 +53,7 @@ void loop() {
 }
 {code:c++}
 
-!! Usage
+!!! Usage
 
 Execute {{availableMemory()}} to get the number of free bytes in memory. 
 
@@ -61,7 +61,7 @@ Please note that memory requirements can change very fast in any sketch and even
 
 I have created sketches that reported 1100 free bytes in the main loop() function just to crash a second later because a different routine needed more memory than expected.
 
-!! References 
+!!! References 
 
 This function is based on get_free_memory() by "Paul" described in the following post:
 [url:http://forum.pololu.com/viewtopic.php?p=4218&sid=7f231afba6e616f87950ffa4689d94f0#p4218]
@@ -73,6 +73,7 @@ The original code is also used inside the SdFat Library (SdFatUtil.h - FreeRam()
 
 The name "availableMemory" is taken from "flash_example.pde", an example for the Flash library created by Mikal Hart 
 [url:http://arduiniana.org/libraries/flash/]
+
 
 
 */
