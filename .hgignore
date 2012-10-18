@@ -1,0 +1,4 @@
+glob:*/obj/*
+glob:bin/Debug/*.*
+glob:bin/Release/*.*
+glob:source/*.suo
