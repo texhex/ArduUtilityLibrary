@@ -34,6 +34,7 @@ http://aul.codeplex.com/wikipage?title=MillisDuration.h
 
 This is a snapshot of this page:
 
+
 {{MillisDuration}} keeps track if a specified duration in milliseconds (“millis”) has passed.
 
 !!! Example
