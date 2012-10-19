@@ -34,11 +34,13 @@ http://aul.codeplex.com/wikipage?title=Halt.h
 This is a snapshot of this page:
 
 
-Calling {{halt()}} will halt execution of your sketch permanently (in _halt.h_)
+Calling {{halt()}} will halt execution of your sketch permanently.
 
 !!! Example
 
 {code:c++}
+#include <Halt.h>
+
 void setup() { 
   Serial.begin(9600);   
 
@@ -82,6 +84,7 @@ Ruben Laguna: Arduino Sleep Mode - Waking Up When Receiving Data on the USART
 
 Some more information about Arduino sleep can be found in this playground post:
 [url:http://www.arduino.cc/playground/Learning/ArduinoSleepCode]
+
 
 */
 

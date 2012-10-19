@@ -38,6 +38,8 @@ Executing {{availableMemory()}} returns the number of free memory (in bytes)
 !!! Example
 
 {code:c++}
+#include <AvailableMemory.h>
+
 void setup() { 
  Serial.begin(9600);   
 }
