@@ -1,7 +1,7 @@
 // HeartbeatLED.h
 /*
 HeartbeatLED Version 3, part of the ArduUtilityLibrary (http://aul.codeplex.com/)
-HeartbeatLED tries to imitate a human heartbeat (Long pause – BLINK – Short pause – BLINK – Long pause...) with a LED
+HeartbeatLED tries to imitate a human heartbeat (Long pause - BLINK - Short pause - BLINK - Long pause...) with a LED
 Copyright (C) 2011-2012 Michael 'TeX' Hex (http://www.texhex.info/)
 
 
@@ -34,7 +34,9 @@ http://aul.codeplex.com/wikipage?title=HeartbeatLED.h
 
 
 This is a snapshot of this page:
-{{HeartbeatLED}} tries to imitate a human heartbeat (Long pause – BLINK – Short pause – BLINK – Long pause...) by using a LED.
+
+
+{{HeartbeatLED}} tries to imitate a human heartbeat (Long pause - BLINK - Short pause - BLINK - Long pause...) by using a LED.
 
 !!! Example
 
@@ -58,7 +60,7 @@ Create an instance of {{HeartbeatLED()}}, then call {{update()}} from the main l
 
 The LED can be used as an indicator if you program is still running normally (LED blinks as desired) or if your program has crashed (aka flat lined, the LED will no longer bling).
 
-By default, {{HeartbeatLED}} will use PIN 13 as the output, but you use a different pin (e.g. 11) as well: {{ HeartbeatLED heartbeat=HeartbeatLED(11);}}
+By default, {{HeartbeatLED}} will use PIN 13 as the output, but you can use a different pin (e.g. 11) also: {{ HeartbeatLED heartbeat=HeartbeatLED(11);}}
 
 !!! References 
 
