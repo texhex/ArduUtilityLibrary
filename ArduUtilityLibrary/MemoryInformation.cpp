@@ -31,7 +31,7 @@ MemoryInformation::MemoryInformation() {
 
 void MemoryInformation::refresh()
 {
-  //import all required variabled
+  //import all required external variables
   extern int __data_start, __data_end;  
   //RAMEND is automatically available
   extern int __bss_start, __bss_end;
@@ -49,10 +49,10 @@ void MemoryInformation::refresh()
   //Adding all section again, the result is 2048 so I think this calculation is correct.
   _ramSize++;
     
-  //This calculation should be 100% accurate, since "avr-size.exe THIS-SKETCH.cpp.elf" shows the same size in column "data"
+  //This calculation should be 100% accurate since "avr-size.exe THIS-SKETCH.cpp.elf" shows the same size in column "data"
   _dotDataSection = (int) &__data_end - (int) &__data_start;
 
-  //This calculation should be 100% accurate, since "avr-size.exe THIS-SKETCH.cpp.elf" shows the same size in column "bss"  
+  //This calculation should be 100% accurate since "avr-size.exe THIS-SKETCH.cpp.elf" shows the same size in column "bss"  
   _dotBssSection = (int) &__bss_end - (int) &__bss_start;
   
   //__brkval can be 0 if nothing was allocated so far (http://andybrown.me.uk/wk/2011/01/01/debugging-avr-dynamic-memory-allocation/)

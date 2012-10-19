@@ -1,0 +1,53 @@
+##############################################
+# Syntax Coloring Map For ArduUtilityLibrary #
+##############################################
+#
+# --- References ---
+#
+# Spencer Bliven: Arduino IDE keywords 
+#    http://acsweb.ucsd.edu/~sbliven/2012/01/arduino-ide-keywords/
+# Arduino Library Tutorial 
+#    http://arduino.cc/en/Hacking/LibraryTutorial
+#
+#
+#	KEYWORD1 Classes, datatypes, and C++ keywords
+#	KEYWORD2 Methods and functions
+#	KEYWORD3 setup and loop functions, as well as the Serial keywords
+#	LITERAL1 Constants
+#	LITERAL2 Built-in variables (unused by default)
+
+
+#------ MillisDuration(Adv)
+MillisDuration	KEYWORD1
+MillisDurationAdv	KEYWORD1
+
+reset	KEYWORD2
+check	KEYWORD2
+setDuration	KEYWORD2
+
+
+#------ HeartbeatLED
+HeartbeatLED	KEYWORD1
+
+update	KEYWORD2
+
+
+#------ availableMemory() function
+availableMemory	KEYWORD2
+
+
+#------ MemoryInformation
+MemoryInformation	KEYWORD1
+
+refresh	KEYWORD2
+ramSize	KEYWORD2
+dataSize	KEYWORD2
+bssSize	KEYWORD2
+heapSize	KEYWORD2
+freeMemorySize	KEYWORD2
+stackSize	KEYWORD2
+
+
+#------ halt() function
+halt	KEYWORD2
+

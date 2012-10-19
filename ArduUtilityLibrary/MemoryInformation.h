@@ -39,6 +39,8 @@ The members of {{MemoryInformation}} return the size (in bytes) of different mem
 !!! Example
 
 {code:c++}
+#include <MemoryInformation.h>
+
 void setup() { 
  Serial.begin(9600);   
 }
@@ -83,6 +85,8 @@ void loop() {
 
 This class can aid in debugging, if you want to know how the memory on your Arduino is currently organized.  In case you just want to know how many free memory your board currently has, use {{availableMemory()}} in [AvailableMemory.h].
 
+If you just want to know how the memory is currently organized, just sent the class instance to Serial:  {{Serial.println(memInfo);}}. To know how big the different sections are use the corresponding function like this {{int i=memInfo.heapSize();}}. The data can be refreshed at any time by calling {{memInfo.refresh();}}.
+
 The memory on a ATmega CPUs is divided into several parts: DATA and BSS are static, they do not change when executing your sketch. Heap is used every time you need memory, and Stack is used when one function calls another (e.g. you call pinMode(13, OUTPUT) from inside the loop() function). Between them the free memory is located. Note also that Heap grows towards the free memory section, while Stack grows downward (as indicated by the arrows).
 
 {{
@@ -106,7 +110,6 @@ AVR Malloc Manual:
 
 Andy Brown: Debugging AVR dynamic memory allocation
 [url:http://andybrown.me.uk/wk/2011/01/01/debugging-avr-dynamic-memory-allocation/]
-
 
 
 */
