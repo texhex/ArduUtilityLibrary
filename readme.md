@@ -16,6 +16,7 @@ The following classes or functions are included with ArduUtilityLibrary:
 
 Each file contains a section "References" that links to other implementations or important information about the topic. If you think my solution is bad, these links might be a good starting point to find what you are searching for.
 
+
 ## Usage ##
 
 Extract the folder ArduUtilityLibrary to the folder ``\libraries`` of your Arduino IDE. A full explanation can be found here: http://arduino.cc/en/Guide/Libraries
@@ -41,5 +42,5 @@ Libraries by Mikal Hart
 
 ## Copyright and License ##
 
-Copyright © 2012-2017 [Michael Hex](http://www.texhex.info/) ([@texhex](https://github.com/texhex/)). Licensed under the **GNU Lesser General Public License (LGPL)**. For details, please see [LICENSE.md](https://github.com/texhex/ArduUtilityLibrary/blob/master/licenses/LICENSE.txt).
+Copyright © 2012-2017 [Michael Hex](http://www.texhex.info/) ([@texhex](https://github.com/texhex/)). Licensed under the **GNU Lesser General Public License (LGPL)**. For details, please see [LICENSE.txt](LICENSE.txt).
 
