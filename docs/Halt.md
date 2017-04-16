@@ -1,8 +1,8 @@
-Calling {{halt()}} will halt execution of your sketch permanently.
+Calling ``halt()`` will halt execution of your sketch permanently.
 
 ### Example
 
-{code:c++}
+```cpp
 #include <Halt.h>
 
 void setup() { 
@@ -25,11 +25,11 @@ void loop() {
    
   Serial.println(F("You will not see this message..."));
 }
-{code:c++}
+```
 
 ### Usage
 
-Execute {{halt()}} to stop execution of your sketch permanently.
+Execute ``halt()`` to stop execution of your sketch permanently.
 
 Please note that this function does **NOT** turn off any digital outputs. They will stay in the current state as they are when halt() is executed.
 
@@ -38,18 +38,15 @@ If you have any project that needs an "Emergency Off" function (because it inclu
 ### References 
 
 Peter Knight (Cathedrow): Narcoleptic, Sleep library for Arduino
-[https://code.google.com/p/narcoleptic/](https://code.google.com/p/narcoleptic/)
+https://code.google.com/p/narcoleptic/
 
 Rocket Scream: Lightweight Low Power Arduino Library
-[http://www.rocketscream.com/blog/2011/07/04/lightweight-low-power-arduino-library/](http://www.rocketscream.com/blog/2011/07/04/lightweight-low-power-arduino-library/)
+http://www.rocketscream.com/blog/2011/07/04/lightweight-low-power-arduino-library/
 
 Ruben Laguna: Arduino Sleep Mode - Waking Up When Receiving Data on the USART
-[http://rubenlaguna.com/wp/2008/10/15/arduino-sleep-mode-waking-up-when-receiving-data-on-the-usart/index.html/](http://rubenlaguna.com/wp/2008/10/15/arduino-sleep-mode-waking-up-when-receiving-data-on-the-usart/index.html/)
+http://rubenlaguna.com/wp/2008/10/15/arduino-sleep-mode-waking-up-when-receiving-data-on-the-usart/index.html/
 
 Some more information about Arduino sleep can be found in this playground post:
-[http://www.arduino.cc/playground/Learning/ArduinoSleepCode](http://www.arduino.cc/playground/Learning/ArduinoSleepCode)
+http://www.arduino.cc/playground/Learning/ArduinoSleepCode
 
 
-
-
-**

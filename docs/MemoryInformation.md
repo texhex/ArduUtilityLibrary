@@ -1,8 +1,8 @@
-The members of {{MemoryInformation}} return the size (in bytes) of different memory sections
+The members of ``MemoryInformation`` return the size (in bytes) of different memory sections
 
 ### Example
 
-{code:c++}
+```cpp
 #include <MemoryInformation.h>
 
 void setup() { 
@@ -43,40 +43,37 @@ void loop() {
  
   delay(1500);
 }
-{code:c++}
+```
 
 ### Usage
 
-This class can aid in debugging, if you want to know how the memory on your Arduino is currently organized.  In case you just want to know how many free memory your board currently has, use {{availableMemory()}} in [AvailableMemory.h](AvailableMemory.h).
+This class can aid in debugging, if you want to know how the memory on your Arduino is currently organized.  In case you just want to know how many free memory your board currently has, use ``availableMemory()`` in [AvailableMemory](AvailableMemory.md).
 
-If you just want to know how the memory is currently organized, just sent the class instance to Serial:  {{Serial.println(memInfo);}}. To know how big the different sections are use the corresponding function like this {{int i=memInfo.heapSize();}}. The data can be refreshed at any time by calling {{memInfo.refresh();}}.
+If you just want to know how the memory is currently organized, just sent the class instance to Serial:  ``Serial.println(memInfo);``. To know how big the different sections are use the corresponding function like this ``int i=memInfo.heapSize();``. The data can be refreshed at any time by calling ``memInfo.refresh();``.
 
 The memory on a ATmega CPUs is divided into several parts: DATA and BSS are static, they do not change when executing your sketch. Heap is used every time you need memory, and Stack is used when one function calls another (e.g. you call pinMode(13, OUTPUT) from inside the loop() function). Between them the free memory is located. Note also that Heap grows towards the free memory section, while Stack grows downward (as indicated by the arrows).
 
-{{
+````
   +----------+----------+--------+--------------+--------+
   | DATA     | BSS      |  Heap  |     FREE     |  Stack |
   | (Static) | (Static) |  --->  |     MEM      |  <---  |
   +----------+----------+--------+--------------+--------+
-}}
-For a much better description about this topic, please see "Jean-Claude Wippler: ATmega memory use" [http://jeelabs.org/2011/05/22/atmega-memory-use/](http://jeelabs.org/2011/05/22/atmega-memory-use/).
+````
+
+For a much better description about this topic, please see "Jean-Claude Wippler: ATmega memory use" http://jeelabs.org/2011/05/22/atmega-memory-use/
 
 ### References 
 
 Smilen Dimitrov: Corrupt Array Variables And Memory
-[http://www.arduino.cc/playground/Main/CorruptArrayVariablesAndMemory](http://www.arduino.cc/playground/Main/CorruptArrayVariablesAndMemory)
+http://www.arduino.cc/playground/Main/CorruptArrayVariablesAndMemory
 
-The general calculation code was published by Marc Compere in this forum post (Please be warned that the calculation is incorrect if {{__brkval}} is 0):
-[http://arduino.cc/forum/index.php/topic,27536.msg204023.html#msg204023](http://arduino.cc/forum/index.php/topic,27536.msg204023.html#msg204023)
+The general calculation code was published by Marc Compere in this forum post (Please be warned that the calculation is incorrect if ``__brkval`` is 0):
+http://arduino.cc/forum/index.php/topic,27536.msg204023.html#msg204023
 
 AVR Malloc Manual:
-[http://www.nongnu.org/avr-libc/user-manual/malloc.html](http://www.nongnu.org/avr-libc/user-manual/malloc.html)
+http://www.nongnu.org/avr-libc/user-manual/malloc.html
 
 Andy Brown: Debugging AVR dynamic memory allocation
-[http://andybrown.me.uk/wk/2011/01/01/debugging-avr-dynamic-memory-allocation/](http://andybrown.me.uk/wk/2011/01/01/debugging-avr-dynamic-memory-allocation/)
+http://andybrown.me.uk/wk/2011/01/01/debugging-avr-dynamic-memory-allocation/
 
 
-
-
-
-**

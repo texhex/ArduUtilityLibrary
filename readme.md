@@ -9,10 +9,10 @@ Not one electronic project I have created would have been possible without Ardui
 The following classes or functions are included with ArduUtilityLibrary:
 
 - [MillisDuration](docs/MillisDuration.md) - Keep track of a duration in milliseconds
-- [MemoryInformation](MemoryInformation.h) - Returns the size (in bytes) of different memory sections
-- [availableMemory()](AvailableMemory.h) - Returns the number of free memory (in bytes) 
-- [halt()](halt.h) - Halts the execution of your sketch permanently
-- [HeartbeatLED](HeartbeatLED.h) - A try to imitate the human heartbeat with a LED
+- [MemoryInformation](docs/MemoryInformation.md) - Returns the size (in bytes) of different memory sections
+- [availableMemory()](docs/AvailableMemory.md) - Returns the number of free memory (in bytes) 
+- [halt()](docs/halt.md) - Halts the execution of your sketch permanently
+- [HeartbeatLED](docs/HeartbeatLED.md) - A try to imitate the human heartbeat with a LED
 
 Each file contains a section "References" that links to other implementations or important information about the topic. If you think my solution is bad, these links might be a good starting point to find what you are searching for.
 
